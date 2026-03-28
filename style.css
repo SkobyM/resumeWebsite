@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #353353;
+    color: white;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        'Nav Main';
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.progress-container {
+    width: 100%;
+    height: 6px;
+}
+
+.progress-bar {
+    height: 4px;
+    background: #63618a;
+    width: 0%;
+}
+
+.sidebar {
+    background-color: #353353;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: Nav;
+}
+
+.navMenu ul li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.navMenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navMenu ul li i {
+    margin-right: 1vh;
+}
+
+.navMenu ul li a:hover {
+    color: #ffe600;
+}
+
+.main-content {
+    grid-area: Main;
+}
+
+section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.github i {
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.myName,
+.job {
+    margin-bottom: 15px;
+}
+
+.about-me,
+.description-about,
+.education_me,
+.description_education {
+    margin-bottom: 15px;
+}
+
+.description_education {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.main_skills {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.main_skills ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.main_skills h2 {
+    margin-bottom: 15px;
+}
+
+
+
+.projects-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.project-card {
+    background-color: #2b2940;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-icon {
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #ffd15c;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: #d1d1d1;
+    margin-bottom: 20px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.project-tech span {
+    background-color: #ff4c60;
+    color: white;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.project-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #ff4c60;
+}
+
+
+.contact-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    width: 100%;
+    background-color: #2b2940; 
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact-info p {
+    color: #d1d1d1;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ffd15c; 
+}
+
+.info-item i {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.info-item span, a {
+    color: white;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'Nav' 'Main';
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navMenu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navMenu ul li {
+        margin: 0 0;
+    }
+
+    .description_education {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main_skills {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}

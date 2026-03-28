@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0b41aa6f0.js" crossorigin="anonymous"></script>
+    <title>Mohammed</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </header>
+    <script>
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+
+    <aside class="sidebar">
+        <nav class="navMenu">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i>Education</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-brain"></i>Skills</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-comments"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <section id="home" class="home-section">
+            <h1 class="myName">Mohammed Saifain</h1>
+            <p class="job">I'm a Programmer</p>
+            <div class="socials">
+                <a href="https://github.com/SkobyM" target="_blank" class="github"><i
+                        class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/mohammed-saifain-027893366/" target="_blank" class="github"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
+
+            </div>
+        </section>
+
+        <section id="about" class="section-about">
+            <h2 class="about-me">About Me</h2>
+            <p class="description-about">Highly motivated 4th-year Software Engineering student at the University of
+                Jeddah, seeking a Summer Internship to leverage strong foundational knowledge in Java, Android
+                development, and Firebase. Eager to contribute to real-world projects and gain practical industry
+                experience in software development
+            </p>
+        </section>
+
+        <section id="education" class="section-eucation">
+            <h2 class="education_me">My Education</h2>
+            <div class="description_education">
+                <p class="uni_name">University of Jeddah, 4.81 GPA</p>
+                <p class="years">2022 - 2027</p>
+            </div>
+            <p class="swe">Bachelor of Science in Software Engineering</p>
+        </section>
+
+        <section id="skills" class="section_skills">
+
+            <div class="main_skills">
+
+                <div class="tech">
+                    <h2>
+                        Technical Skills
+                    </h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Native Android Studio</li>
+                        <li>Firebase</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <div class="soft">
+                    <h2>
+                        Soft Skills
+                    </h2>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="section-projects">
+            <h2 class="projects-title">My Projects</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-brands fa-android fa-2xl" style="color: #a4c639;"></i>
+                    </div>
+                    <h3>MediTrack</h3>
+                    <p class="project-desc">
+                        A native Android application designed to help patients adhere to medication schedules and enable
+                        doctors to manage prescriptions securely.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>XML</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="https://github.com/SkobyM/mediTrackProject" target="_blank" class="project-link">
+                        <i class="fa-brands fa-github"></i> View Repository
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-globe fa-2xl" style="color: #4db8ff;"></i>
+                    </div>
+                    <h3>CardCompare</h3>
+                    <p class="project-desc">
+                        A responsive web application built to compare various credit and prepaid cards, featuring a
+                        user-friendly UI/UX design.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="https://github.com/SkobyM" target="_blank" class="project-link">
+                        <i class="fa-brands fa-github"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-contact">
+            <h2 class="contact-title">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:m7mdbox1@gmail.com">m7mdbox1@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+966542939775">+966542939775</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Jeddah, Saudi Arabia</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
