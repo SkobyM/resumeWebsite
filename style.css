@@ -67,7 +67,7 @@ body {
 }
 
 .navMenu ul li a:hover {
-    color: #ffe600;
+    color: #ffd15c;
 }
 
 .main-content {
@@ -190,7 +190,7 @@ section {
 }
 
 .project-link:hover {
-    color: #ff4c60;
+    color: #ffd15c;
 }
 
 
@@ -236,10 +236,15 @@ section {
     font-size: 1.2rem;
 }
 
-.info-item span, a {
+.info-item span, .info-item a {
     color: white;
     font-size: 0.95rem;
     text-decoration: none;
+}
+
+.info-item a:hover {
+    color: #ffd15c; 
+    transition: 0.3s;
 }
 
 
